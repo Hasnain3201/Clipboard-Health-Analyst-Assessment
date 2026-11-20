@@ -1,0 +1,4 @@
+.env
+.state/
+*.sqlite*
+.DS_Store

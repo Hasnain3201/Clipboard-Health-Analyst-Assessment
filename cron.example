@@ -1,0 +1,4 @@
+# Example user crontab. Configure the host time zone and substitute the project path.
+# Runs at 08:00 in cron's time zone. .env and the SQLite queue live beside the project.
+PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin
+0 8 * * * cd "/absolute/path/to/bellhaven" && mkdir -p .state && node --disable-warning=ExperimentalWarning app.mjs scan >> ".state/cron.log" 2>&1
